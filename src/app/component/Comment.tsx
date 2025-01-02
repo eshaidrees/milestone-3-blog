@@ -22,7 +22,6 @@ export default function Comment() {
       <h2 className="text-2xl font-bold mb-4">Comments</h2>
 
       {/* Display Comments */}
-      {/* {comments.length > 0 ? ( */}
         <ul className="space-y-4">
           {comments.map((comment, index) => (
             <li
@@ -33,9 +32,6 @@ export default function Comment() {
             </li>
           ))}
         </ul>
-      {/* ) : (
-        <p className="text-gray-600"></p>
-      )} */}
 
       {/* Add New Comment */}
       <div className="mt-4">
