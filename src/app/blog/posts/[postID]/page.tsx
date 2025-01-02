@@ -19,6 +19,8 @@ const PostPage = () => {
       <Image
         src={post.image}
         alt={post.title}
+        width={200}
+        height={100}
         className="w-full max-w-2xl h-80 object-cover rounded-lg mb-6"
       />
       <h2 className="text-2xl text-center font-semibold mb-6 w-1/2">{post.title}</h2>

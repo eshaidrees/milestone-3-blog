@@ -19,6 +19,8 @@ export default function BlogList() {
             <Image
               src={post.image}
               alt={post.title}
+              width={200}
+              height={100}
               className="w-full md:w-1/3 h-48 object-cover rounded-lg mb-4 md:mb-0 md:mr-6"
             />
             <div>
