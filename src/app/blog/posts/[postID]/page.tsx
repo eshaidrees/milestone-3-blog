@@ -1,15 +1,13 @@
-import ReactMarkdown from 'react-markdown'; 
+"use client";
+import { useParams } from 'next/navigation';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { posts , Post } from '../../data';
 import Comment from '@/app/component/Comment';
+import ReactMarkdown from 'react-markdown'; 
 
-interface PostPageProps {
-  params: { postID: string };
-}
-
-export default function PostPage({ params }: PostPageProps) {
-  const { postID } = params;
+export default function PostPage() {
+  const { postID } = useParams();
 
   // Retrieve post content based on postId
   const post =  posts.find((post:Post) => post.id === postID)
