@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { posts } from '../blog/data';
-
+import Image from 'next/image';
 export default function BlogList() {
 
   const filteredPosts = posts.filter((post) => 
@@ -16,7 +16,7 @@ export default function BlogList() {
             key={post.id}
             className="bg-white p-6 mb-6 rounded-lg shadow-md border border-gray-200 flex flex-col md:flex-row"
           >
-            <img
+            <Image
               src={post.image}
               alt={post.title}
               className="w-full md:w-1/3 h-48 object-cover rounded-lg mb-4 md:mb-0 md:mr-6"

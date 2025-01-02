@@ -2,6 +2,7 @@
 import { useParams } from 'next/navigation';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import { posts, Post } from '../../data';
 import Comment from '@/app/component/Comment';
 import ReactMarkdown from 'react-markdown';
@@ -15,7 +16,7 @@ const PostPage = () => {
 
   return (
     <div className="bg-gray-100 min-h-screen p-6 flex flex-col items-center">
-      <img
+      <Image
         src={post.image}
         alt={post.title}
         className="w-full max-w-2xl h-80 object-cover rounded-lg mb-6"
